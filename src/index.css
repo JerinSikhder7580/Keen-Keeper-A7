@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+
+section{
+  max-width: 1400px;
+  padding: 40px 105px;
+  margin: 0 auto;
+
+}
+
+
