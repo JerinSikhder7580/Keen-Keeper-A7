@@ -6,7 +6,7 @@ import XImg from "../../assets/twitter.png"
 const Footer = () => {
     return (
         <div>
-            <div className='bg-[#244d3f] py-48  '>
+            <div className='bg-[#244d3f] py-48'>
                 <section>
                     <div className='text-center space-y-6' >
                         <div >
