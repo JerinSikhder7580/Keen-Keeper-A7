@@ -64,17 +64,9 @@ const FriendDetails = () => {
 
         }
 
-
-
-        console.log(obj)
-
+       
         toast.success(`${action} with ${friend.name}`)
-
-
-
     }
-
-
     return (
         <div>
             <ToastContainer position='top-center'></ToastContainer>
