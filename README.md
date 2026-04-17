@@ -64,9 +64,6 @@ Built with a clean UI and responsive design, KeenKeeper ensures you never lose t
 
 
 
-##  Author
-
-**Jerin Khondoker**
 
 ---
 
