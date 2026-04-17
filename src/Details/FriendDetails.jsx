@@ -86,7 +86,7 @@ const FriendDetails = () => {
                     <div >
                         {
                             friend &&
-                            <div className='grid grid-cols-2 md:grid-cols-5 gap-5 *:border *:border-gray-100 *:shadow'>
+                            <div className='block sm:grid sm:space-y-0 space-y-5  grid-cols-5 gap-5 *:border *:border-gray-100 *:shadow'>
                                 <div className='col-span-2 row-span-2 text-center p-3 space-y-1'>
                                     <img className='mx-auto rounded-full' src={friend.picture} alt="" />
                                     <h1 className='font-bold text-xl'>{friend.name}</h1>
@@ -103,7 +103,7 @@ const FriendDetails = () => {
 
                                 <div className=' flex flex-col items-center justify-center'>
                                     <h1 className='text-3xl font-bold'>{friend.days_since_contact}</h1>
-                                    <p className='text-gray-500'>Days Since Contact</p>
+                                    <p className='text-gray-500 text-center'>Days Since Contact</p>
                                 </div>
 
                                 <div className=' flex flex-col items-center justify-center'>
@@ -112,7 +112,7 @@ const FriendDetails = () => {
                                 </div>
 
                                 <div className=' flex flex-col items-center justify-center '>
-                                    <h1 className='text-3xl font-bold'>{friend.next_due_date}</h1>
+                                    <h1 className='text-3xl font-bold text-center'><span>{format(new Date(friend.next_due_date),"PP")}</span></h1>
                                     <p className='text-gray-500'>Next Due</p>
                                 </div>
 
@@ -133,10 +133,10 @@ const FriendDetails = () => {
                                 </div>
                                 <div className='col-span-3'>
                                     <h1 className='text-[#244d3f] text-center md:text-left font-semibold text-xl p-6'>Quick Check-In</h1>
-                                    <div className='md:flex grid grid-cols-1 justify-center  md:justify-around p-3 '>
-                                        <button className='bg-gray-200 px-20 rounded py-5 border border-gray-100' onClick={() => notify("Call")}><PhoneCall /> Call</button>
-                                        <button className='bg-gray-200 px-20 rounded py-5 border border-gray-100' onClick={() => notify("Text")}><MessageSquareMore />Text</button>
-                                        <button className='bg-gray-200 px-20 rounded py-5 border border-gray-100' onClick={() => notify("Video")}> <MessageSquareMore />Video</button>
+                                    <div className='flex  justify-center  md:justify-around p-3 '>
+                                        <button className='bg-gray-200 w-1/3  rounded py-5 border border-gray-100  flex sm:flex-col items-center justify-center gap-2' onClick={() => notify("Call")}><PhoneCall /><span>Call</span></button>
+                                        <button className='bg-gray-200 w-1/3  rounded py-5 border border-gray-100  flex sm:flex-col items-center justify-center gap-2' onClick={() => notify("Text")}><MessageSquareMore />Text</button>
+                                        <button className='bg-gray-200 w-1/3  rounded py-5 border border-gray-100  flex sm:flex-col items-center justify-center gap-2' onClick={() => notify("Video")}> <MessageSquareMore />Video</button>
                                     </div>
                                 </div>
                             </div>

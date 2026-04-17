@@ -10,6 +10,7 @@ import FriendProvider from './context/FriendProvider.jsx';
 import TimeLine from './pages/timeline/TimeLine.jsx';
 import Status from './pages/status/Status.jsx';
 import FriendDetails from './Details/FriendDetails.jsx';
+import ErrorComponents from './ErrorComponents/ErrorComponents.jsx';
 
 
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorComponents></ErrorComponents>,
     children: [
       {
         index: true,
@@ -34,8 +36,8 @@ const router = createBrowserRouter([
         element: <TimeLine></TimeLine>
       },
       {
-        path:"status",
-        element:<Status></Status>
+        path: "status",
+        element: <Status></Status>
       }
 
     ]
