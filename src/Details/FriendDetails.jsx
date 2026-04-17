@@ -90,7 +90,7 @@ const FriendDetails = () => {
                                         }
                                     </div>
                                     <p className='text-gray-500'>"{friend.bio}"</p>
-                                    <p className='text-gray-500'>{friend.email}</p>
+                                    <p className='text-gray-500 overflow-x-auto'>{friend.email}</p>
                                 </div>
 
                                 <div className=' flex flex-col items-center justify-center'>
