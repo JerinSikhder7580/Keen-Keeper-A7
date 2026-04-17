@@ -20,9 +20,9 @@ const TimeLine = () => {
     return (
         <div>
             <section>
-                <h1>Timeline</h1>
+                <h1 className='text-5xl font-bold my-3'>Timeline</h1>
                 <select onChange={handleFilter} className='select w-full md:w-100' defaultValue={"Filter"}>
-                    <option value="" disabled>Filter</option>
+                    <option value="">Filter</option>
                     <option value="Call">Call</option>
                     <option value="Text">Text</option>
                     <option value="Video">Video</option>
